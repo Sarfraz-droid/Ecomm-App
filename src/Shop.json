@@ -1,0 +1,30 @@
+[{
+    "CartName" : "Pencil Box",
+    "url": "https://media.istockphoto.com/photos/metal-pencil-case-picture-id117221710?k=6&m=117221710&s=612x612&w=0&h=OzkzTusuld_tlhw8SSIGcupn2vJOZEtaVHNXRaKz2IQ=",
+    "Price" : 10
+},
+{
+    "CartName" : "High Ankle Jeans",
+    "url": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd9%2F32%2Fd932c609446b216c64884ad1df56d54aad21568a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans_loose%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]",
+    "Price" : 200
+},
+{
+    "CartName" : "PlayStation 5",
+    "url": "https://rukminim1.flixcart.com/image/416/416/kj7gwi80/gamingconsole/t/v/v/cfi-1008a01r-825-sony-no-original-imafytxe7twjskbx.jpeg?q=70",
+    "Price" : 74599
+},
+{
+    "CartName" : "Cotton Toy Giant",
+    "url": "https://images-na.ssl-images-amazon.com/images/I/51cGCBxqrRL._SL1000_.jpg",
+    "Price" : 3664.00
+},
+{
+    "CartName" : "MacBook Air M1",
+    "url": "https://images-na.ssl-images-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg",
+    "Price" : 117900.00
+},
+{
+    "CartName" : "Woolen Mask",
+    "url": "https://images-na.ssl-images-amazon.com/images/I/81cElPPz9GS._SL1500_.jpg",
+    "Price" : 399.00
+}]

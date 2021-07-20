@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import react, { useState } from "react";
+import Grid from "@material-ui/core/Grid";
+import Header from "./ui/Header";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "./theme";
+import Home from "./Home";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import Checkout from "./Checkout";
+import PaymentForm from "./PaymentForm";
 
 function App() {
+  const [Basket, setBasket] = useState({
+    basket: [],
+    count: 0,
+  });
+
+  const [Total, setTotal] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Header Basket={Basket} setBasket={setBasket} />
+
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => <Home Basket={Basket} setBasket={setBasket}  />}
+          />
+          <Route
+            path="/checkout"
+            render={(props) => (
+              <Checkout Basket={Basket} setBasket={setBasket} Total={Total} SetTotal={setTotal}/>
+            )}
+          />
+          <Route
+            path="/payment"
+            render={(props) => (
+              <PaymentForm Basket={Basket} setBasket={setBasket} Total={Total} SetTotal={setTotal}/>
+            )}
+          />
+            <Route
+            path="/payment/success"
+            render={(props) => (
+              <div>
+                PAYMENT SUCCESSFUL
+              </div>
+            )}
+          />
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 
