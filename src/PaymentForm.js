@@ -108,7 +108,8 @@ function PaymentForm(prop) {
     //     amount: prop.Total
     //   })
     // });
-    const data =  await axios.post('https://floating-taiga-63791.herokuapp.com/razorpay', qs.stringify({amount: prop.Total}));
+    // https://floating-taiga-63791.herokuapp.com/razorpay
+    const data =  await axios.post('https://floating-taiga-63791.herokuapp.com/razorpay', {amount: prop.Total});
     console.log(data);
     
     var options = {

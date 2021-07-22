@@ -8,6 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import CardContent from "@material-ui/core/CardContent";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -59,7 +60,7 @@ function Checkout({ Basket, SetBasket, Total, SetTotal }) {
 
   return (
     <Grid container direction="column">
-      <Grid item justify="center" style={{ textAlign: "center", padding: 20 }}>
+      <Grid item justify="center" style={{ textAlign: "center", padding: 20 }} >
         <Typography variant="heading" className={Classes.Header}>
           Checkout
         </Typography>
@@ -99,6 +100,7 @@ function Checkout({ Basket, SetBasket, Total, SetTotal }) {
           </Card>
         </Grid>
       </Grid>
+      <CircularProgress />
     </Grid>
   );
 }

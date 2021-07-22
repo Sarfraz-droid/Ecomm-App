@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
       bottom: 10,
     },
     "50%": {
-      bottom: 60,
+      bottom: 40,
     },
     "100%": {
       bottom: 10,

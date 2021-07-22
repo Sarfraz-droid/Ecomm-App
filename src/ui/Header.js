@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   Heading: {
     ...theme.typography.logo,
     margin: "auto",
-    marginRight: 650,
+    marginRight: 500,
     fontWeight: 200,
     fontStyle: "italic",
     textDecoration: "none"
